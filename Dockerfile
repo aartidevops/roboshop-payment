@@ -1,4 +1,4 @@
-FROM            python
+FROM            python:3.12-slim
 RUN             useradd -u 1001 python
 WORKDIR         /home/python
 COPY            payment.ini payment.py rabbitmq.py requirements.txt ./
